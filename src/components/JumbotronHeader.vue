@@ -15,7 +15,10 @@
             </div>
         </div>
         <div class="circle-container d-flex">
-            <div class="circle-index" @click="activeImage(index)" v-for="(circle, index) in Jumbotron.length" :key="index"></div>
+            <div class="circle-index" @click="activeImage(index)" v-for="(circle, index) in Jumbotron.length" :key="index"
+            :class="(index == indexImg) ? activeOuter : ''">
+                <div :class="(index == indexImg) ? activeInner : ''"></div>
+            </div>
         </div>
     </div>
 </template>
@@ -33,6 +36,8 @@ export default {
         return{
             indexImg: 0,
             Jumbotron,
+            activeOuter: 'active-outer',
+            activeInner: 'active-inner',
         }
     },
 
@@ -98,9 +103,27 @@ export default {
 .circle-index{
     height: 15px;
     width: 15px;
-    background-color: black;
+    background-color: rgba(255, 255, 255, .5);
     border-radius: 50%;
     margin: 0 10px;
+}
+
+.active-outer{
+    border: 0.5px solid $whiteColor;
+    background-color: transparent;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active-inner{
+    background-color: $whiteColor;
+    width: 5px;
+    height: 5px; 
+    border-radius:50%;
 }
 
 .container{
