@@ -128,5 +128,21 @@ export default {
     }
 }
 
+@media screen and (max-width: 576px){
+
+
+    .container{
+        .row{
+            .text-jumbo{
+                h1{
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+    
+    
+}
+
 
 </style>

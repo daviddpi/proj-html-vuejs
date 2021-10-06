@@ -80,7 +80,7 @@ ul{
     }
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 768px){
     img{
         width: 150px;
     }
