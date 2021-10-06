@@ -5,8 +5,15 @@
 </template>
 
 <script>
+import ElementNavBar from '../data/headerNavBar.json'
 export default {
-
+    name: 'Header',
+    data(){
+        return{
+            ElementNavBar
+        }
+    },
+    components: ""
 }
 </script>
 
