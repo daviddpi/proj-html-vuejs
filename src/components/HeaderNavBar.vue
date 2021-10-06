@@ -5,13 +5,15 @@
                 <nav class="d-flex">
                     <ul class="d-flex align-item-center justify-content-evenly">
                         <li class="d-block">
-                            <img src="../assets/img/logo-light.png" alt="Logo iAcademy">
+                            <img id="logo-header" src="../assets/img/logo-light.png" alt="Logo iAcademy">
                         </li>
                         <li class="d-none d-lg-flex" v-for="(element, index) in elementNav" :key="index"><a :href="element.link"> {{ element.name }} </a></li>
                     </ul>
                     <div class="d-flex align-item-center" id="icon-nav">
                         <i class="fas fa-search"></i>
-                        <i class="fas fa-shopping-bag"></i>
+                        <i class="fas fa-shopping-bag">
+                            <div id="number-buy">0</div>
+                        </i>
                         <i class="fas fa-bars"></i>
                     </div>  
                 </nav>
@@ -43,7 +45,7 @@ export default {
 
 nav{
     padding: 15px;
-    img{
+    #logo-header{
         width: 200px;
         z-index: 2;
     }
@@ -69,6 +71,10 @@ ul{
     }
 }
 
+.fa-shopping-bag{
+    position: relative;
+}
+
 #icon-nav{
     align-self: center;
     flex-basis: 15%;
@@ -78,6 +84,16 @@ ul{
     .fa-search{
         transform: rotate(90deg);
     }
+}
+
+#number-buy{
+    position: absolute;
+    top: -3px;
+    right: -8px;
+    background-color: $backgroundPrimary;
+    border-radius: 50%;
+    padding: 2px 4px;
+    font-size: 0.8rem;
 }
 
 @media screen and (max-width: 768px){
