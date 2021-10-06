@@ -23,5 +23,6 @@ export default {
 
 <style lang="scss">
 @import './style/general.scss';
+@import './style/color.scss';
 
 </style>
