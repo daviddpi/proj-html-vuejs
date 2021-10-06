@@ -9,7 +9,7 @@
                     <div>
                         <h1>Contemporary Ideas</h1>
                         <p class="d-none d-sm-none d-md-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque neque aperiam ipsam debitis quasi molestias nostrum laboriosam cupiditate voluptatem obcaecati omnis, quisquam qui. Et consequuntur, odio dolores magnam aut corporis.</p>
-                        <button class="btn btn-primary">Register Now</button>
+                        <button class="mybtn">Register Now</button>
                     </div>
                 </div>
             </div>
@@ -128,6 +128,15 @@ export default {
     }
 }
 
+.mybtn{
+    background-color: $backgroundPrimary;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    border: none;
+    color:  $whiteColor;
+    font-weight: 600;
+}
+
 @media screen and (max-width: 576px){
 
 
@@ -140,7 +149,6 @@ export default {
             }
         }
     }
-    
     
 }
 
