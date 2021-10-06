@@ -1,2 +1,17 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "color.scss";
+
+.mybtn{
+    background-color: $backgroundPrimary;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    border: none;
+    color:  $whiteColor;
+    font-weight: 600;
+    transition: all .5s ease;
+    
+  &:hover{
+    background-color: $backgroundHover;
+  }
+}

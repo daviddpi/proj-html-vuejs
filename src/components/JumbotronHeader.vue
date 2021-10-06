@@ -151,15 +151,6 @@ export default {
     }
 }
 
-.mybtn{
-    background-color: $backgroundPrimary;
-    text-transform: uppercase;
-    padding: 10px 25px;
-    border: none;
-    color:  $whiteColor;
-    font-weight: 600;
-}
-
 @media screen and (max-width: 576px){
 
 

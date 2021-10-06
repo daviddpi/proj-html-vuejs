@@ -67,6 +67,11 @@ ul{
             text-decoration: none;
             text-transform: uppercase;
             color: $whiteColor;
+
+            &:hover{
+                text-decoration: underline;
+                color: $whiteColor;
+            }
         }
     }
 }
@@ -84,12 +89,25 @@ ul{
     .fa-search{
         transform: rotate(90deg);
     }
+
+    i{
+        height: 100%;
+        padding: 10px;
+
+
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.35);
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+        }
+    }
 }
 
 #number-buy{
     position: absolute;
-    top: -3px;
-    right: -8px;
+    top: 3px;
+    right: 3px;
     background-color: $backgroundPrimary;
     border-radius: 50%;
     padding: 2px 4px;
