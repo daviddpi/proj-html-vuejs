@@ -1,12 +1,14 @@
 <template>
     <header>
         <HeaderNavBar :elementNav="ElementNavBar"/>
+        <JumbotronHeader />
     </header>
 </template>
 
 <script>
 import ElementNavBar from '../data/headerNavBar.json'
 import HeaderNavBar from './HeaderNavBar.vue'
+import JumbotronHeader from './JumbotronHeader'
 
 export default {
     name: 'Header',
@@ -18,7 +20,8 @@ export default {
     },
 
     components: {
-        HeaderNavBar
+        HeaderNavBar,
+        JumbotronHeader,
     }
 }
 </script>
@@ -27,5 +30,8 @@ export default {
 @import '../style/general.scss';
 @import '../style/color.scss';
 
+header{
+    position: relative;
+}
 
 </style>

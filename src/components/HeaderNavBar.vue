@@ -1,28 +1,27 @@
 <template>
-    <div class="bg-nav">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="d-flex ">
-                        <ul class="d-flex align-item-center justify-content-evenly">
-                            <li>
-                                <img src="../assets/img/logo-light.png" alt="Logo iAcademy">
-                            </li>
-                            <li v-for="(element, index) in elementNav" :key="index"><a :href="element.link"> {{ element.name }} </a></li>
-                        </ul>
-                        <div class="d-flex align-item-center" id="icon-nav">
-                            <i class="fas fa-search"></i>
-                            <i class="fas fa-shopping-bag"></i>
-                            <i class="fas fa-bars"></i>
-                        </div>  
-                    </nav>
-                </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 nav-container">
+                <nav class="d-flex ">
+                    <ul class="d-flex align-item-center justify-content-evenly">
+                        <li>
+                            <img src="../assets/img/logo-light.png" alt="Logo iAcademy">
+                        </li>
+                        <li v-for="(element, index) in elementNav" :key="index"><a :href="element.link"> {{ element.name }} </a></li>
+                    </ul>
+                    <div class="d-flex align-item-center" id="icon-nav">
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-shopping-bag"></i>
+                        <i class="fas fa-bars"></i>
+                    </div>  
+                </nav>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+
 export default {
     name: "HeaderNavBar",
 
@@ -36,10 +35,17 @@ export default {
 @import '../style/general.scss';
 @import '../style/color.scss';
 
+
+.nav-container{
+    position: absolute;
+    top: 0;
+}
+
 nav{
-    background: black;
+    padding: 15px;
     img{
         width: 200px;
+        z-index: 2;
     }
 }
 
