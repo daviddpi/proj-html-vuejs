@@ -2,12 +2,12 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 nav-container">
-                <nav class="d-flex ">
+                <nav class="d-flex">
                     <ul class="d-flex align-item-center justify-content-evenly">
-                        <li>
+                        <li class="d-block">
                             <img src="../assets/img/logo-light.png" alt="Logo iAcademy">
                         </li>
-                        <li v-for="(element, index) in elementNav" :key="index"><a :href="element.link"> {{ element.name }} </a></li>
+                        <li class="d-none d-lg-flex" v-for="(element, index) in elementNav" :key="index"><a :href="element.link"> {{ element.name }} </a></li>
                     </ul>
                     <div class="d-flex align-item-center" id="icon-nav">
                         <i class="fas fa-search"></i>
@@ -77,6 +77,18 @@ ul{
 
     .fa-search{
         transform: rotate(90deg);
+    }
+}
+
+@media screen and (max-width: 576px){
+    img{
+        width: 150px;
+    }
+
+    #icon-nav{
+        i{
+            padding: 0 10px;
+        }
     }
 }
 

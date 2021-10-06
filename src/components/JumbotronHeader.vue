@@ -8,7 +8,7 @@
                 <div class="col-12 text-jumbo">
                     <div>
                         <h1>Contemporary Ideas</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque neque aperiam ipsam debitis quasi molestias nostrum laboriosam cupiditate voluptatem obcaecati omnis, quisquam qui. Et consequuntur, odio dolores magnam aut corporis.</p>
+                        <p class="d-none d-sm-none d-md-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque neque aperiam ipsam debitis quasi molestias nostrum laboriosam cupiditate voluptatem obcaecati omnis, quisquam qui. Et consequuntur, odio dolores magnam aut corporis.</p>
                         <button class="btn btn-primary">Register Now</button>
                     </div>
                 </div>
