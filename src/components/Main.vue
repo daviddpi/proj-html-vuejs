@@ -52,6 +52,27 @@
                 </div>
             </div>
         </div>
+
+        <!-- tab section -->
+        <div class="container">
+            <div class="row tab-section">
+                <div class="col-4">
+                    
+                    <ul>
+                        <li><h6 class="active-tab">What We do</h6></li>
+                        <li><h6>text</h6></li>
+                        <li><h6>text</h6></li>
+                        <li><h6>text</h6></li>
+                        <li><h6>text</h6></li>
+                        <li><h6>text</h6></li>
+                    </ul>
+                    
+                </div>
+                <div class="col-8">
+
+                </div>
+            </div>
+        </div>
         <!-- bagde che ritorna il alto la pagina -->
         <div class="turn-up">
             <a href="#logo-header">
@@ -153,6 +174,7 @@ main{
 .container-world-section{
     width: 100%;
     height: 530px;
+    margin-bottom: 120px;
 
     .bg-world{
         background-image: url("../assets/img/h5-parallax-img-1.png");
@@ -177,7 +199,42 @@ main{
     
 }
 
+.tab-section{
+    ul{
+        list-style: none;
+        height: 100%;
+        li:last-child{
+            border-bottom:  1px solid #e5e5e5;
+        }
+        li{
+            display: flex;
+            height: 83px;
+            align-items: center;
+            border: 1px solid #e5e5e5;
+            border-bottom: none;
+            
+            h6{
+                display: flex;
+                align-items: center;
+                height: 100%;
+                margin: 0;
+                padding-left: 40px;
+                border: none;
+                border-left: 5px solid transparent;
+                font-family: $primaryFont;
+                font-weight: 600;
+                color: $textColorGrey;
+            }
 
+            .active-tab{
+                border-left: 5px solid $backgroundPrimary;
+                background-color: #fcfcfc;
+                color: $backgroundPrimary;
+            }
+            
+        }
+    }
+}
 
 .turn-up{
     position: fixed;
