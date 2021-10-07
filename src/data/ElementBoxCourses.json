@@ -6,7 +6,8 @@
             "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus asperiores sit iusto reprehenderit ullam illo qui",
             "cost": "free",
             "src": "course-5-f-img.jpg",
-            "type": "Programming"
+            "type": "Programming",
+            "user": "1"
 
         },
         "box2":{
@@ -15,7 +16,8 @@
             "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus asperiores sit iusto reprehenderit ullam illo qui",
             "cost": "free",
             "src": "course-6-f-img.jpg",
-            "type": "Programming"
+            "type": "Programming",
+            "user": "1"
 
         },
         "box3":{
@@ -24,7 +26,8 @@
             "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus asperiores sit iusto reprehenderit ullam illo qui",
             "cost": "$20",
             "src": "course-12-f-img.jpg",
-            "type": "business"
+            "type": "business",
+            "user": "1"
         }
         
     },
@@ -36,7 +39,8 @@
             "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus asperiores sit iusto reprehenderit ullam illo qui",
             "cost": "$150",
             "src": "course-11-f-img.jpg",
-            "type": "Programming"
+            "type": "Programming",
+            "user": "1"
 
         },
         "box2":{
@@ -45,7 +49,8 @@
             "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus asperiores sit iusto reprehenderit ullam illo qui",
             "cost": "$150",
             "src": "course-10-f-img.jpg",
-            "type": "Programming"
+            "type": "Programming",
+            "user": "1"
 
         },
         "box3":{
@@ -54,7 +59,8 @@
             "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus asperiores sit iusto reprehenderit ullam illo qui",
             "cost": "free",
             "src": "course-2-f-img.jpg",
-            "type": "Programming"
+            "type": "Programming",
+            "user": "1"
 
         }
         
@@ -67,7 +73,8 @@
             "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus asperiores sit iusto reprehenderit ullam illo qui",
             "cost": "free",
             "src": "course-4-f-img.jpg",
-            "type": "Programming"
+            "type": "Programming",
+            "user": "1"
 
         },
         "box2":{
@@ -76,7 +83,8 @@
             "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus asperiores sit iusto reprehenderit ullam illo qui",
             "cost": "free",
             "src": "course-7-f-img.jpg",
-            "type": "Programming"
+            "type": "Programming",
+            "user": "1"
 
         },
         "box3":{
@@ -85,7 +93,8 @@
             "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus asperiores sit iusto reprehenderit ullam illo qui",
             "cost": "free",
             "src": "course-8-f-img.jpg",
-            "type": "Programming"
+            "type": "Programming",
+            "user": "1"
 
         }
         

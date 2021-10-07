@@ -5,7 +5,9 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aspernatur, saepe cum deserunt vero eius esse nihil, explicabo optio possimus.</p>
         </div>
         <div class="col-12 col-md-4 info-courses" v-for="(element, index) in arrayCourses[indexBox]" :key="'outer'+index">
-            <img class="img-fluid" :src="require(`../assets/img/${element.src}`)" alt="Immagine">
+            <div class="img-hoover-zoom">
+                <img class="img-fluid" :src="require(`../assets/img/${element.src}`)" alt="Immagine">
+            </div>
             <div class="info-courses-text">
                 <div class="d-flex justify-content-lg-between">
                     <h5>{{ element.course }}</h5>
@@ -16,7 +18,7 @@
                 <p>{{element.info}}</p>
                 <div class="d-flex mb-3">
                     <div class="d-flex align-items-center me-2">
-                        <i class="fas fa-user"></i><span>1</span>
+                        <i class="fas fa-user"></i><span>{{element.user}}</span>
                     </div>
                     <div class="d-flex align-items-center">
                         <i class="fas fa-tag"></i><span>{{element.type}}</span>
@@ -97,6 +99,18 @@ export default {
 
 .info-courses{
 
+    .img-hoover-zoom{
+        overflow: hidden;
+
+        img{
+            transition: transform .5s ease;
+
+            &:hover{
+                transform: scale(1.3);
+            }
+        }
+    }
+
     .info-courses-text{
         border: 0.5px solid #f2f2f2;
         padding: 10px;
@@ -133,11 +147,11 @@ export default {
 
         .fa-tag{
             transform: rotate(90deg);
+            padding: 0 5px;
         }
 
         .cost-course{
             text-transform: uppercase;
-            background-color: $backgroundPrimary;
             color: $whiteColor;
             border-radius: 20px;
             font-size: 0.8rem;
