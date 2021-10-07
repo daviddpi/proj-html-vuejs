@@ -2,7 +2,7 @@
     <div class="text-center">
         <img :src="require(`../assets/img/${arrayInfo[indexImg].src}`)" :alt="arrayInfo[indexImg].alt">
         <p><q>{{ arrayInfo[indexImg].exp }}</q></p>
-        <h5>{{ name }}</h5>
+        <h5>{{ arrayInfo[indexImg].name }}</h5>
         <h6>Student</h6>
         <div class="circle-container">
             <div class="circle-index" v-for="(circle, index) in arrayInfo.length" :key="index"
