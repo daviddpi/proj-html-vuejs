@@ -1,12 +1,12 @@
 <template>
     <div class="row tab-section">
-        <div class="col-4">
+        <div class="col-12 col-md-4">
             <ul>
                 <li @click="changeTabs(index)" v-for="(tab, index) in tabElement" :key="index"><h6 :class="{'active-tab': index == indexTab}"> {{ tab.name }} </h6></li>
             </ul>
             
         </div>
-        <div class="col-8 text-tab">
+        <div class="col-12 col-md-8 text-tab">
             <div>
                 <h1> {{ tabsInfo[indexTab].title }} </h1>
                 <p> {{ tabsInfo[indexTab].text }} </p>
@@ -48,7 +48,7 @@ export default {
 
 
 .tab-section{
-    height: 540px;
+    min-height: 540px;
     margin-bottom: 150px;
     ul{
         list-style: none;
@@ -103,7 +103,7 @@ export default {
             }
 
             p{
-                margin-bottom: 75px;
+                margin-bottom: 70px;
             }
 
             ul{
@@ -116,7 +116,7 @@ export default {
                     height: max-content;
                     margin-bottom: 25px;
                     color: #808080;
-                    width: 70%;
+                    width: 80%;
 
                     .fa-check{
                         color: $backgroundPrimary;
@@ -128,7 +128,7 @@ export default {
             .img-tab{
                 position: absolute;
                 bottom: -20px;
-                right: 0;
+                right: -20px;
                 width: 100px;
             }
         }
