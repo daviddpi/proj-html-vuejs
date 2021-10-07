@@ -1,7 +1,7 @@
 <template>
     <main>
         <div class="container">
-            <div class="row d-flex g-3">
+            <div class="row d-flex g-3 mb-5">
                 <IconCard v-for="(icon, index) in ElementIconCard" :key="index" :src="ElementIconCard[index].src" 
                 :alt="ElementIconCard[index].alt" :text="ElementIconCard[index].text"/>
             </div>

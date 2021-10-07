@@ -1,5 +1,5 @@
 <template>
-        <div class="col-md-4 col-lg-2">
+        <div class="col-md-4 col-lg-2 d-none d-sm-none d-md-block">
             <div class="card-icon">
                 <div>
                     <img :src="require(`../assets/img/${src}`)" :alt="`${alt}`">
@@ -41,7 +41,7 @@ export default {
     align-items: center;
     text-align: center;
     font-family: 'Merriweather', serif;
-
+    border: 1px solid #f2f2f2;
     h3{
         font-size: 1.4rem;
         font-weight: 600;
