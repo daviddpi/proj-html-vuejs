@@ -8,7 +8,6 @@
             "src": "course-5-f-img.jpg",
             "type": "Programming",
             "user": "1"
-
         },
         "box2":{
             "course": "Web designing",
@@ -18,7 +17,6 @@
             "src": "course-6-f-img.jpg",
             "type": "Programming",
             "user": "1"
-
         },
         "box3":{
             "course": "Financial Modeling",
@@ -29,7 +27,6 @@
             "type": "business",
             "user": "1"
         }
-        
     },
 
     {
@@ -41,7 +38,6 @@
             "src": "course-11-f-img.jpg",
             "type": "Programming",
             "user": "1"
-
         },
         "box2":{
             "course": "Software Engineering",
@@ -51,7 +47,6 @@
             "src": "course-10-f-img.jpg",
             "type": "Programming",
             "user": "1"
-
         },
         "box3":{
             "course": "Learn Vue",
@@ -61,7 +56,6 @@
             "src": "course-2-f-img.jpg",
             "type": "Programming",
             "user": "1"
-
         }
         
     },
@@ -95,7 +89,6 @@
             "src": "course-8-f-img.jpg",
             "type": "Programming",
             "user": "1"
-
         }
         
     }
