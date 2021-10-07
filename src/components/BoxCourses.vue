@@ -4,31 +4,30 @@
             <h1>Popular Online Courses</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aspernatur, saepe cum deserunt vero eius esse nihil, explicabo optio possimus.</p>
         </div>
-        <div class="col-4 info-courses">
-            <img class="img-fluid" src="../assets/img/course-5-f-img.jpg" alt="">
+        <div class="col-12 col-md-4 info-courses" v-for="(element, index) in arrayCourses[indexBox]" :key="'outer'+index">
+            <img class="img-fluid" :src="require(`../assets/img/${element.src}`)" alt="Immagine">
             <div class="info-courses-text">
                 <div class="d-flex justify-content-lg-between">
-                    <h5>Android Developer</h5>
-                    <div class="cost-course cost-course-free align-self-center">free</div>
+                    <h5>{{ element.course }}</h5>
+                    <div class="cost-course cost-course-free align-self-center" :class="(element.cost != 'free') ? notFree : freeCost">{{element.cost}}</div>
                 </div>
 
-                <h6>David Sanders</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus asperiores sit iusto reprehenderit ullam illo qui</p>
+                <h6>{{element.name}}</h6>
+                <p>{{element.info}}</p>
                 <div class="d-flex mb-3">
                     <div class="d-flex align-items-center me-2">
                         <i class="fas fa-user"></i><span>1</span>
                     </div>
                     <div class="d-flex align-items-center">
-                        <i class="fas fa-tag"></i><span>Programming</span>
+                        <i class="fas fa-tag"></i><span>{{element.type}}</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-4"></div>
-        <div class="col-4"></div>
 
         <div class="circle-container">
-            <div class="circle-index"></div>
+            <div class="circle-index" @click="activeBox(sign)" v-for="(circle, sign) in arrayCourses.length" :key="sign"
+            :class="(sign == indexBox) ? active : ''"></div>
         </div>
     </div>
 </template>
@@ -36,7 +35,25 @@
 <script>
 export default {
     name: "BoxCourses",
-}
+    props: {
+        arrayCourses: Array
+    },
+
+    data(){
+        return{
+            indexBox: 0,
+            active: 'active',
+            freeCost: "cost-course-free",
+            notFree: "cost-not-free",
+        }
+    },
+
+    methods: {
+        activeBox(sign){
+            this.indexBox = sign;
+        }
+    },
+}   
 </script>
 
 <style lang="scss" scoped>
@@ -68,13 +85,23 @@ export default {
     .circle-index{
         height: 15px;
         width: 15px;
-        background-color: $backgroundPrimary;
+        background-color: rgba(85, 172, 238, 0.5);
         border-radius: 50%;
         margin: 0 10px;
+    }
+
+    .active{
+        background-color: $backgroundPrimary;
     }
 }
 
 .info-courses{
+
+    img{
+        min-height: 227px;
+        object-fit: fill;
+    }
+
     .info-courses-text{
         border: 0.5px solid #f2f2f2;
         padding: 10px;
@@ -124,6 +151,10 @@ export default {
 
         .cost-course-free{
             background-color: #ffd740;
+        }
+
+        .cost-not-free{
+             background-color: $backgroundPrimary
         }
     }
 }

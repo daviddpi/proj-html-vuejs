@@ -63,7 +63,7 @@
    
             <!-- popular courses section -->
             <div class="container container-popuar-courses">
-                <BoxCourses />
+                <BoxCourses :arrayCourses="ElementBoxCourses"/>
             </div>
             <hr>
 
@@ -92,6 +92,7 @@ import Tabs from './Tabs.vue'
 import TabsElements from '../data/TabsElements.json'
 import TabsInfoElements from '../data/TabsInfoElements.json'
 import BoxCourses from './BoxCourses.vue'
+import ElementBoxCourses from '../data/ElementBoxCourses.json'
 
 export default {
     name: "Main",
@@ -108,7 +109,8 @@ export default {
             ElementIconCard,
             StudentExperienceInfo,
             TabsElements,
-            TabsInfoElements
+            TabsInfoElements,
+            ElementBoxCourses
         }
     }
 }

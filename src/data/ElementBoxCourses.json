@@ -1,0 +1,93 @@
+[
+    {
+        "box1":{
+            "course": "Android Developer",
+            "Name": "David Sanders",
+            "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus asperiores sit iusto reprehenderit ullam illo qui",
+            "cost": "free",
+            "src": "course-5-f-img.jpg",
+            "type": "Programming"
+
+        },
+        "box2":{
+            "course": "Web designing",
+            "Name": "Jennifer Powell",
+            "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus asperiores sit iusto reprehenderit ullam illo qui",
+            "cost": "free",
+            "src": "course-6-f-img.jpg",
+            "type": "Programming"
+
+        },
+        "box3":{
+            "course": "Financial Modeling",
+            "Name": "Edward Bowman",
+            "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus asperiores sit iusto reprehenderit ullam illo qui",
+            "cost": "$20",
+            "src": "blog-post-2.jpg",
+            "type": "business"
+        }
+        
+    },
+
+    {
+        "box1":{
+            "course": "Ios Developer",
+            "Name": "Steve Wozsniak",
+            "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus asperiores sit iusto reprehenderit ullam illo qui",
+            "cost": "$150",
+            "src": "course-11-f-img.jpg",
+            "type": "Programming"
+
+        },
+        "box2":{
+            "course": "Software Engineering",
+            "Name": "Bill Gates",
+            "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus asperiores sit iusto reprehenderit ullam illo qui",
+            "cost": "$150",
+            "src": "course-10-f-img.jpg",
+            "type": "Programming"
+
+        },
+        "box3":{
+            "course": "Learn Vue",
+            "Name": "Maxime Caruana",
+            "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus asperiores sit iusto reprehenderit ullam illo qui",
+            "cost": "free",
+            "src": "course-2-f-img.jpg",
+            "type": "Programming"
+
+        }
+        
+    },
+
+    {
+        "box1":{
+            "course": "Name Course",
+            "Name": "Name Tutor",
+            "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus asperiores sit iusto reprehenderit ullam illo qui",
+            "cost": "free",
+            "src": "course-4-f-img.jpg",
+            "type": "Programming"
+
+        },
+        "box2":{
+            "course": "Name Course",
+            "Name": "Name Tutor",
+            "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus asperiores sit iusto reprehenderit ullam illo qui",
+            "cost": "free",
+            "src": "course-7-f-img.jpg",
+            "type": "Programming"
+
+        },
+        "box3":{
+            "course": "Name Course",
+            "Name": "Name Tutor",
+            "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus asperiores sit iusto reprehenderit ullam illo qui",
+            "cost": "free",
+            "src": "course-8-f-img.jpg",
+            "type": "Programming"
+
+        }
+        
+    }
+]
