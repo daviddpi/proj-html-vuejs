@@ -48,10 +48,14 @@
                         <div class="col-12 d-flex align-items-center justify-content-center text-world-student">
                             <div class="text-center">
                                 <img src="../assets/img/testimonials-standard-2.png" alt="Immagine di uno studente">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste libero odit nihil, nam saepe ea sequi deserunt deleniti error magni qui, similique eveniet est aut quibusdam soluta asperiores quasi veniam.</p>
-                                <h6>Pinco Pallino</h6>
+                                <p><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste libero odit nihil, nam saepe ea sequi deserunt deleniti error magni qui, similique eveniet est aut quibusdam soluta asperiores quasi veniam.</q></p>
+                                <h5>Pinco Pallino</h5>
                                 <h6>Student</h6>
-                                <div></div>
+                                <div class="circle-container">
+                                    <div class="circle-index"></div>
+                                    <div class="circle-index"></div>
+                                    <div class="circle-index circle-active"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -175,10 +179,43 @@ main{
 
             .text-world-student{
                 height: 100%;
+                color: $whiteColor;
+
+                img{
+                    margin-bottom: 25px;
+                }
+
+                h5{
+                    font-family: $primaryFont;
+                }
+
+                h6{
+                    text-transform: uppercase;
+                    margin-bottom: 40px;
+                }
 
                 p{
                     margin: 0 auto;
                     width: 50%;
+                    margin-bottom: 30px;
+                }
+
+                .circle-container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .circle-index{
+                    height: 15px;
+                    width: 15px;
+                    background-color: rgba(255, 255, 255, .5);
+                    border-radius: 50%;
+                    margin: 0 10px;
+                }
+
+                .circle-active{
+                    background-color: $whiteColor;
                 }
             }
         }
