@@ -57,7 +57,6 @@
         <div class="container">
             <div class="row tab-section">
                 <div class="col-4">
-                    
                     <ul>
                         <li><h6 class="active-tab">What We do</h6></li>
                         <li><h6>text</h6></li>
@@ -68,8 +67,18 @@
                     </ul>
                     
                 </div>
-                <div class="col-8">
-
+                <div class="col-8 text-tab">
+                    <div>
+                        <h1>Learning Possibilites</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit exercitationem in fugiat nemo magnam eaque. Repudiandae aperiam eveniet dolorem tempora tenetur alias voluptate facere provident. Culpa id perferendis ut provident?</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> testo</li>
+                            <li>testo</li>
+                            <li>testo</li>
+                            <li>testo</li>
+                        </ul>
+                        <img class="img-tab" src="../assets/img/h12-tabs-icon-1.png" alt="Immagine di una squadra$backgroundPrimary">
+                    </div>   
                 </div>
             </div>
         </div>
@@ -208,7 +217,7 @@ main{
         }
         li{
             display: flex;
-            height: 83px;
+            height: 80px;
             align-items: center;
             border: 1px solid #e5e5e5;
             border-bottom: none;
@@ -232,6 +241,51 @@ main{
                 color: $backgroundPrimary;
             }
             
+        }
+    }
+
+
+    .text-tab{
+        padding: 25px;
+        div{
+            width: 75%;
+            position: relative;
+            
+            h1{
+                font-family: $primaryFont;
+                font-weight: bold;
+                margin-bottom: 25px;
+            }
+
+            p{
+                margin-bottom: 75px;
+            }
+
+            ul{
+                list-style: none;
+                margin-left: 0;
+                padding-left: 1rem;
+                // text-indent: -1.2rem;
+
+                li{
+                    border: none;
+                    height: max-content;
+                    margin-bottom: 30px;
+                    color: #808080;
+
+                    .fa-check{
+                        color: $backgroundPrimary;
+                        margin-right: 15px;
+                    }
+                }
+
+            }
+            .img-tab{
+                position: absolute;
+                bottom: -30px;
+                right: 0;
+                width: 100px;
+            }
         }
     }
 }
