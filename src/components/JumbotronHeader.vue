@@ -57,7 +57,6 @@ export default {
         },
 
         activeImage(index){
-            console.log("sto cliccando");
             this.indexImg = index;
         }
     },
