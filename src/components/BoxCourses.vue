@@ -97,11 +97,6 @@ export default {
 
 .info-courses{
 
-    img{
-        min-height: 227px;
-        object-fit: fill;
-    }
-
     .info-courses-text{
         border: 0.5px solid #f2f2f2;
         padding: 10px;
