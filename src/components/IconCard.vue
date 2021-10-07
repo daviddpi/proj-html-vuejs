@@ -40,7 +40,7 @@ export default {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: 'Merriweather', serif;
+    font-family: $primaryFont;
     border: 1px solid #f2f2f2;
     h3{
         font-size: 1.4rem;

@@ -137,7 +137,7 @@ export default {
             margin: 0 auto;
             h1{
                 font-size: 5rem;
-                font-family: 'Merriweather', serif;
+                font-family: $primaryFont;
                 margin-bottom: 35px;
             }
 

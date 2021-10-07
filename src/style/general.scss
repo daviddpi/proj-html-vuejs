@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 @import "color.scss";
 
+$primaryFont: 'Merriweather', serif;
+
 .mybtn{
     background-color: $backgroundPrimary;
     text-transform: uppercase;
