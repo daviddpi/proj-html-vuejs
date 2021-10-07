@@ -1,7 +1,7 @@
 <template>
     <main>
-        <div class="container">
 
+        <div class="container">
             <div class="row d-flex g-3 row-icon">
                 <IconCard v-for="(icon, index) in ElementIconCard" :key="index" :src="ElementIconCard[index].src" 
                 :alt="ElementIconCard[index].alt" :text="ElementIconCard[index].text"/>
@@ -34,6 +34,19 @@
                         <div>
                             <h2>347</h2>
                             <h6>Events</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- sezione world-student-text  -->
+        <div class="container-world-section">
+            <div class="bg-world">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 d-flex align-items-center">
+                            <img src="" alt="">
                         </div>
                     </div>
                 </div>
@@ -101,6 +114,9 @@ main{
 }
 
 .empowering-section{
+
+    margin-bottom: 50px;
+
     img{
         width: 50%;
         margin-bottom: 50px ;
@@ -130,6 +146,21 @@ main{
     }
     
 }
+
+
+.container-world-section{
+    width: 100%;
+    height: 730px;
+
+    .bg-world{
+        background-image: url("../assets/img/h5-parallax-img-1.png");
+        background-size: 200%;
+        background-position: top 10% right 50%;
+        width: 100%;
+        height: 100%;
+    }
+}
+
 
 .turn-up{
     position: fixed;
