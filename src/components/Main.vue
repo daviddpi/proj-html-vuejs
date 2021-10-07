@@ -1,6 +1,5 @@
 <template>
     <main>
-
         <div class="container">
             <div class="row d-flex g-3 row-icon">
                 <IconCard v-for="(icon, index) in ElementIconCard" :key="index" :src="ElementIconCard[index].src" 
@@ -57,6 +56,35 @@
         <div class="container">
             <Tabs :tabElement="TabsElements" :tabsInfo="TabsInfoElements"/>
         </div>
+
+        <hr>
+
+        <div class="bg-courses-pricing">
+   
+            <!-- popular courses section -->
+            <div class="container">
+                <div class="row polpular-courses">
+                    <div class="col-12 text-center">
+                        <h1>Popular Online Courses</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aspernatur, saepe cum deserunt vero eius esse nihil, explicabo optio possimus a? Tenetur laborum animi laboriosam nulla voluptatum doloribus consequuntur sint.</p>
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid" src="../assets/img/course-5-f-img.jpg" alt="">
+                        <div>
+                            <h5>Android Developer</h5>
+                            <h6>David Sanders</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus asperiores sit iusto reprehenderit ullam illo qui</p>
+                        </div>
+                    </div>
+                    <div class="col-4"></div>
+                    <div class="col-4"></div>
+                </div>
+            </div>
+            <hr>
+
+        </div>
+
+        
         <!-- bagde che ritorna il alto la pagina -->
         <div class="turn-up">
             <a href="#logo-header">
@@ -102,7 +130,13 @@ export default {
 
 main{
     position: relative;
+
+    hr{
+        margin-bottom: 100px;
+    }
 }
+
+
 
 .row-icon{
     margin-bottom: 150px;
@@ -188,7 +222,15 @@ main{
     }
     
 }
+    .bg-courses-pricing{
+        height: 100%;
+        width: 100%;
+        background-image: url("../assets/img/page-background-img.png");
+        background-size: contain;
+    }
 
+
+//css tasto torna alla navbar
 .turn-up{
     position: fixed;
     bottom: 0;
