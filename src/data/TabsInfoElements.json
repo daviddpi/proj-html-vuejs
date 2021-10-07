@@ -1,0 +1,78 @@
+[
+    {
+        "title": "Learning Possibilities",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "list":{
+            "one":"We enrich lives through learning.",
+            "two": "Maximizing potential through individual attention.",
+            "three": "The trusted name for specialized training",
+            "four": "People teach. People learn. This is where they connect."
+        },
+        "src": "h12-tabs-icon-1.png"
+    },
+
+    {
+        "title": "Text Title Degree",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "list":{
+            "one":"Text list degree",
+            "two": "Text list degree",
+            "three": "Text list degree",
+            "four": "Text list degree"
+        },
+        "src": "h12-tabs-icon-2.png"
+
+    },
+
+    {
+        "title": "Text Title Career",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "list":{
+            "one":"Text list Career",
+            "two": "Text list Career",
+            "three": "Text list Career",
+            "four": "Text list Career"
+        },
+        "src": "h12-tabs-icon-3.png"
+
+    },
+
+    {
+        "title": "Text Title personal Man.",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "list":{
+            "one":"Text list personal Man.",
+            "two": "Text list personal Man.",
+            "three": "Text list personal Man.",
+            "four": "Text list personal Man."
+        },
+        "src": "h12-tabs-icon-4.png"
+
+    },
+
+    {
+        "title": "Text Title success",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "list":{
+            "one":"Text list success",
+            "two": "Text list success",
+            "three": "Text list success",
+            "four": "Text list success"
+        },
+        "src": "h12-tabs-icon-5.png"
+
+    },
+
+    {
+        "title": "Text Title knwoledge",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "list":{
+            "one":"Text list knwoledge",
+            "two": "Text list knwoledge",
+            "three": "Text list knwoledge",
+            "four": "Text list knwoledge"
+        },
+        "src": "h12-tabs-icon-6.png"
+
+    }
+]

@@ -55,7 +55,7 @@
 
         <!-- tab section -->
         <div class="container">
-            <Tabs :tabElement="TabsElements"/>
+            <Tabs :tabElement="TabsElements" :tabsInfo="TabsInfoElements"/>
         </div>
         <!-- bagde che ritorna il alto la pagina -->
         <div class="turn-up">
@@ -74,6 +74,7 @@ import StudentExperience from './StudentExperience.vue'
 import StudentExperienceInfo from '../data/StudentExperienceInfo.json'
 import Tabs from './Tabs.vue'
 import TabsElements from '../data/TabsElements.json'
+import TabsInfoElements from '../data/TabsInfoElements.json'
 
 export default {
     name: "Main",
@@ -88,7 +89,8 @@ export default {
         return{
             ElementIconCard,
             StudentExperienceInfo,
-            TabsElements
+            TabsElements,
+            TabsInfoElements
         }
     }
 }

@@ -8,15 +8,12 @@
         </div>
         <div class="col-8 text-tab">
             <div>
-                <h1>Learning Possibilites</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit exercitationem in fugiat nemo magnam eaque. Repudiandae aperiam eveniet dolorem tempora tenetur alias voluptate facere provident. Culpa id perferendis ut provident?</p>
+                <h1> {{ tabsInfo[indexTab].title }} </h1>
+                <p> {{ tabsInfo[indexTab].text }} </p>
                 <ul>
-                    <li><i class="fas fa-check"></i> testo</li>
-                    <li>testo</li>
-                    <li>testo</li>
-                    <li>testo</li>
+                    <li v-for="(element, index) in tabsInfo[indexTab].list" :key="index"><i class="fas fa-check"></i> {{ element }} </li>
                 </ul>
-                <img class="img-tab" src="../assets/img/h12-tabs-icon-1.png" alt="Immagine di una squadra$backgroundPrimary">
+                <img class="img-tab" :src="require(`../assets/img/${tabsInfo[indexTab].src}`)" alt="Immagine">
             </div>   
         </div>
     </div>
@@ -33,7 +30,8 @@ export default {
     },
 
     props: {
-        tabElement: Array
+        tabElement: Array,
+        tabsInfo: Array
     },
 
     methods: {
@@ -50,6 +48,8 @@ export default {
 
 
 .tab-section{
+    height: 540px;
+    margin-bottom: 150px;
     ul{
         list-style: none;
         height: 100%;
@@ -110,13 +110,13 @@ export default {
                 list-style: none;
                 margin-left: 0;
                 padding-left: 1rem;
-                // text-indent: -1.2rem;
 
                 li{
                     border: none;
                     height: max-content;
-                    margin-bottom: 30px;
+                    margin-bottom: 25px;
                     color: #808080;
+                    width: 70%;
 
                     .fa-check{
                         color: $backgroundPrimary;
@@ -127,7 +127,7 @@ export default {
             }
             .img-tab{
                 position: absolute;
-                bottom: -30px;
+                bottom: -20px;
                 right: 0;
                 width: 100px;
             }
