@@ -1,19 +1,46 @@
 <template>
     <main>
         <div class="container">
+
             <div class="row d-flex g-3 row-icon">
                 <IconCard v-for="(icon, index) in ElementIconCard" :key="index" :src="ElementIconCard[index].src" 
                 :alt="ElementIconCard[index].alt" :text="ElementIconCard[index].text"/>
             </div>
+
+            <!-- sezione trust name -->
             <div class="row trusted-name-section">
                 <div class="col-12">
                     <h1>The Trusted Name <br>for In-Home Tutoring.</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat totam facere sapiente nobis commodi eius modi harum labore dolorem assumenda aspernatur rerum hic eaque saepe recusandae, odio error? Ad, odio.</p>
                     <a href="#">Learn More</a>
-                    <img src="../assets/img/h5-img-1.jpg" alt="Immagine di riferimento ">
+                    <img class="img-fluid" src="../assets/img/h5-img-1.jpg" alt="Immagine di riferimento ">
+                </div>
+            </div>
+
+            <!-- sezione empowering -->
+            <div class="row empowering-section">
+                <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="../assets/img/h8-slide-1-img.png" alt="Immagine della terra">
+                </div>
+
+                <div class="col-12 col-md-6 text-empowering">
+                    <h2>Empowering <br>Children To Reach<br> Their Potential. </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur excepturi omnis dicta aut labore itaque laudantium, aliquam laboriosam mollitia tempora exercitationem earum repellendus aspernatur? Dicta itaque quos necessitatibus nulla atque.</p>
+                    <div class="d-flex number-user-event">
+                        <div>
+                            <h2>168</h2>
+                            <h6>User Stories</h6>
+                        </div>
+                        <div>
+                            <h2>347</h2>
+                            <h6>Events</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- bagde che ritorna il alto la pagina -->
         <div class="turn-up">
             <a href="#logo-header">
                 <div><i class="fas fa-chevron-up"></i></div>
@@ -56,7 +83,7 @@ main{
 }
 
 .trusted-name-section{
-
+    margin-bottom: 150px;
     h1{
         font-family: $primaryFont;
         font-weight: 700;
@@ -71,6 +98,37 @@ main{
         text-transform: uppercase;
         color: $backgroundPrimary;
     }
+}
+
+.empowering-section{
+    img{
+        width: 50%;
+        margin-bottom: 50px ;
+    }
+
+    .text-empowering{
+        width: 40%;
+
+        h2{
+            font-family: $primaryFont;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    }
+
+    .number-user-event{
+        font-family: $primaryFont;
+        font-weight: 600;
+        color: $backgroundPrimary;
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+
+        h2{
+            margin-bottom: 5px;
+        }
+    }
+    
 }
 
 .turn-up{
