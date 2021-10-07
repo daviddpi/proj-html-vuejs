@@ -45,8 +45,14 @@
             <div class="bg-world">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 d-flex align-items-center">
-                            <img src="" alt="">
+                        <div class="col-12 d-flex align-items-center justify-content-center text-world-student">
+                            <div class="text-center">
+                                <img src="../assets/img/testimonials-standard-2.png" alt="Immagine di uno studente">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste libero odit nihil, nam saepe ea sequi deserunt deleniti error magni qui, similique eveniet est aut quibusdam soluta asperiores quasi veniam.</p>
+                                <h6>Pinco Pallino</h6>
+                                <h6>Student</h6>
+                                <div></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -150,7 +156,7 @@ main{
 
 .container-world-section{
     width: 100%;
-    height: 730px;
+    height: 530px;
 
     .bg-world{
         background-image: url("../assets/img/h5-parallax-img-1.png");
@@ -159,7 +165,28 @@ main{
         width: 100%;
         height: 100%;
     }
+
+    .container{
+        height: 100%;
+
+        .row{
+
+            height: 100%;
+
+            .text-world-student{
+                height: 100%;
+
+                p{
+                    margin: 0 auto;
+                    width: 50%;
+                }
+            }
+        }
+    }
+    
 }
+
+
 
 
 .turn-up{
