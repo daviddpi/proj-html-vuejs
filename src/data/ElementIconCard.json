@@ -1,0 +1,37 @@
+[
+    {
+        "src": "h5-custom-icon-1.png",
+        "alt": "Icon",
+        "text": "Language"
+    },
+
+    {
+        "src": "h5-custom-icon-2.png",
+        "alt": "Icon",
+        "text": "Software"
+    },
+
+    {
+        "src": "h5-custom-icon-3.png",
+        "alt": "Icon",
+        "text": "Business"
+    },
+
+    {
+        "src": "h5-custom-icon-4.png",
+        "alt": "Icon",
+        "text": "Chemistry"
+    },
+
+    {
+        "src": "h5-custom-icon-5.png",
+        "alt": "Icon",
+        "text": "Science"
+    },
+
+    {
+        "src": "h5-custom-icon-6.png",
+        "alt": "Icon",
+        "text": "DIY&Craft"
+    }
+]

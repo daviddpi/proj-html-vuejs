@@ -1,5 +1,5 @@
 <template>
-    <div class="jumbo-container">
+    <div class="jumbo-container mb-5">
         <div class="img-header">
             <img class="header-jumbotron img-fluid" :src="require(`../assets/img/${Jumbotron[indexImg].src}`)" :alt="Jumbotron[indexImg].alt">
         </div>
@@ -74,8 +74,6 @@ export default {
 <style lang="scss" scoped>
 @import '../style/general.scss';
 @import '../style/color.scss';
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
-
 
 .jumbo-container{
     height: 680px;
