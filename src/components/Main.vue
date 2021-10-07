@@ -20,7 +20,7 @@
             <!-- sezione empowering -->
             <div class="row empowering-section">
                 <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-                    <img src="../assets/img/h8-slide-1-img.png" alt="Immagine della terra">
+                    <img class="img-fluid" src="../assets/img/h8-slide-1-img.png" alt="Immagine della terra">
                 </div>
 
                 <div class="col-12 col-md-6 text-empowering">
@@ -149,6 +149,27 @@ main{
             color: $whiteColor;
         }
     }
+}
+
+@media screen and (max-width: 768px){
+
+    .empowering-section{
+
+        .text-empowering{
+            width: 100%;
+            text-align: center;
+            p{
+                margin-bottom: 25px;
+
+            }
+        }
+
+        .number-user-event{
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+
 }
 
 
