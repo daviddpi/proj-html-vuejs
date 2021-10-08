@@ -5,49 +5,61 @@
                 <div class="col-12 col-md-3 logo-footer">
                     <img class="img-fluid" src="../assets/img/footer-logo-1.png" alt="logo iAcademy">
                     <ul>
-                        <li>text</li>
-                        <li>text</li>
-                        <li>text</li>
-                        <li>text</li>
+                        <li>Providing Life Changing </li>
+                        <li>experiences Through </li>
+                        <li>Education. Class That Fit Your </li>
+                        <li>Busy Life. Closer to Home </li>
                     </ul>
                     <div>
                         <i class="fas fa-phone-alt"></i>
-                        <span>Tel</span>
+                        <span>Tel 1-677-124-44227</span>
                     </div>
                     <div>
                         <i class="far fa-clock"></i>
-                        <span>ora</span>
+                        <span>Mon - Sat 8.00 - 18.00</span>
                     </div>
                 </div>
                 <div class="col-12 col-md-3">
-                    <h2>Popular Courses</h2>
+                    <h2>{{ FooterElement[0].popular.title }}</h2>
                     <ul>
-                        <li>
-                            <h6>Engh</h6>
-                            <p>Mar</p>
-                        </li>
-                        <li>
-                            <h6>Social</h6>
-                            <p>David</p>
-                        </li>
-                        <li>
-                            <h6>Spani</h6>
-                            <p>Jennie</p>
+                        <li v-for="(course, index) in FooterElement[0].popular" :key="index">
+                            <h6>{{ course.type }}</h6>
+                            <p>{{ course.name }}</p>
                         </li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-2">
                     <h2>Support</h2>
                     <ul>
-                        <li>User</li>
-                        <li>Con</li>
-                        <li>Faq</li>
-                        <li>Course</li>
-                        <li>Event</li>
+                        <li>
+                            <a href="#">
+                                User dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Contact us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                FAQ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Course offer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Events
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-3">
-                    <h2>Flex</h2>
+                <div class="col-12 col-md">
+                    <h2>Flexible Learning</h2>
                     <ul>
                         <li>
                             <img class="img-fluid" src="../assets/img/footer-img-1.png" alt="">
@@ -82,8 +94,19 @@
 </template>
 
 <script>
-export default {
+import FooterElement from '../data/FooterElement.json'
 
+export default {
+    name: "footer",
+    data(){
+        return{
+            FooterElement
+        }
+    },
+
+    created(){
+        console.log(this.FooterElement[0].popular);
+    }
 }
 </script>
 
@@ -99,6 +122,10 @@ footer{
         font-family: $primaryFont;
     }
 
+    h6{
+        font-size: 1.1rem;
+    }
+
     ul{
         list-style: none;
         padding-top: 35px;
@@ -111,6 +138,16 @@ footer{
 
     li{
         margin-bottom: 15px;
+    }
+
+    a{
+        text-decoration: none;
+        color: $whiteColor;
+
+        &:hover{
+            color: $whiteColor;
+            text-decoration: underline;
+        }
     }
     
     hr{

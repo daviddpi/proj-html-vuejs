@@ -1,0 +1,19 @@
+[
+    {
+        "popular":{
+            "title": "Popular Courses",
+            "course1":{
+                "type": "Business English",
+                "name": "Preston Marshall"
+            },
+            "course2":{
+                "type": "Social Computing",
+                "name": "David Sanders"
+            },
+            "course3":{
+                "type": "Learn Spanish",
+                "name": "Jennie King"
+            }
+        }
+    }
+]
