@@ -73,6 +73,8 @@
                 <TablePlans />
             </div>
 
+            <hr>
+
         </div>
 
         

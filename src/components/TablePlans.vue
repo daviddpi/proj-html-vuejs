@@ -15,67 +15,68 @@
                     <th><h4>Save up to 40% by paying weekly</h4></th>
                     <th class="price-plans">
                         <img class="img-fluid" src="../assets/img/h5-custom-icon-7.png" alt="immagine di una lampadina">
-                        <h4>Standard <br>$12</h4>
+                        <h4>Standard</h4>
+                        <h4>$12</h4>
+                    </th>
+                    <th id="border-top-price" class="price-plans">
+                        <img class="img-fluid" src="../assets/img/h5-custom-icon-8.png" alt="immagine di una lampadina">
+                        <h4>Professional</h4>
+                        <h4>$59</h4>
                     </th>
                     <th class="price-plans">
-                        <img class="img-fluid" src="../assets/img/h5-custom-icon-7.png" alt="immagine di una lampadina">
-                        <h4>Standard <br>$12</h4>
-                    </th>
-                    <th class="price-plans">
-                        <img class="img-fluid" src="../assets/img/h5-custom-icon-7.png" alt="immagine di una lampadina">
-                        <h4>Standard <br>$12</h4>
+                        <img class="img-fluid" src="../assets/img/h5-custom-icon-9.png" alt="immagine di una lampadina">
+                        <h4>Advanced</h4>
+                        <h4>$88</h4>
                     </th>
                 </tr>
 
                 <tr>
                     <td>Number of Courses</td>
                     <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
+                    <td>4</td>
+                    <td>6</td>
                 </tr>
                 <tr>
                     <td>Time</td>
                     <td>15 days</td>
-                    <td>15 days</td>
-                    <td>15 days</td>
+                    <td>30 days</td>
+                    <td>30 days</td>
                 </tr>
                 <tr>
                     <td>Web Designing</td>
-                    <td>&check;</td>
-                    <td>&check;</td>
-                    <td>&check;</td>
-
+                    <td><i class="fas fa-check"></i>;</td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-check"></i></td>
                 </tr>
                 <tr>
                     <td>Human-Centered Design</td>
-                    <td>&check;</td>
-                    <td>&check;</td>
-                    <td>&check;</td>
-
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-check"></i></td>
                 </tr>
                 <tr>
                     <td>Basic Marketing</td>
-                    <td>&cross;</td>
-                    <td>&cross;</td>
-                    <td>&cross;</td>
+                    <td><i class="fas fa-times"></i></td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-check"></i></td>
                 </tr>
                 <tr>
                     <td>Python for Everybody</td>
-                    <td>&cross;</td>
-                    <td>&cross;</td>
-                    <td>&cross;</td>
+                    <td><i class="fas fa-times"></i></td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-check"></i></td>
                 </tr>
                 <tr>
                     <td>Android Developer</td>
-                    <td>&cross;</td>
-                    <td>&cross;</td>
-                    <td>&cross;</td>
+                    <td><i class="fas fa-times"></i></td>
+                    <td><i class="fas fa-times"></i></td>
+                    <td><i class="fas fa-check"></i></td>
                 </tr>
                 <tr>
                     <td>Business English</td>
-                    <td>&cross;</td>
-                    <td>&cross;</td>
-                    <td>&cross;</td>
+                    <td><i class="fas fa-times"></i></td>
+                    <td><i class="fas fa-times"></i></td>
+                    <td><i class="fas fa-check"></i></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -105,6 +106,8 @@ export default {
 @import '../style/color.scss';
 
 .plans-section{
+
+    margin-bottom: 100px;
 
     position: relative;
 
@@ -153,6 +156,16 @@ export default {
 
     #table-plans{
 
+        .fa-check{
+            color: #53caff;
+        }
+
+        .fa-times{
+            color: #999999;
+        }
+
+        
+
         th{
             width: calc(100% / 4);
             background-color: $whiteColor;
@@ -170,6 +183,7 @@ export default {
             td:first-child{
                 border-left: none;
                 border-bottom: none;
+                background-color: transparent;
             }
         }
 
@@ -190,6 +204,13 @@ export default {
         .price-plans{
             background-color: #f7fdff;
             text-align: center;
+            img{
+                margin-bottom: 15px;
+            }
+        }
+
+        #border-top-price{
+            border-top-color: #40c4ff;
         }
 
         .btn-table{
