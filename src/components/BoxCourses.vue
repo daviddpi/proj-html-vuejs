@@ -9,7 +9,7 @@
                 <img class="img-fluid" :src="require(`../assets/img/${element.src}`)" alt="Immagine">
             </div>
             <div class="info-courses-text">
-                <div class="d-flex justify-content-lg-between">
+                <div class="d-flex justify-content-between">
                     <h5>{{ element.course }}</h5>
                     <div class="cost-course cost-course-free align-self-center" :class="(element.cost != 'free') ? notFree : freeCost">{{element.cost}}</div>
                 </div>

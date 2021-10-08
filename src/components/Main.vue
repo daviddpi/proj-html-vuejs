@@ -77,7 +77,7 @@
         </div>
 
         <div class="container">
-            <div class="row logos-section">
+            <div class="row logos-section gy-5">
                 <div class="col-6 col-md-3">
                     <img class="img-fluid" src="../assets/img/h5-client-5.png" alt="Logo iAcademy">
                 </div>
