@@ -13,6 +13,8 @@ $primaryFont: 'Merriweather', serif;
     color:  $whiteColor;
     font-weight: 600;
     transition: all .5s ease;
+    border: 1px solid transparent;
+
     
   &:hover{
     background-color: $backgroundHover;
