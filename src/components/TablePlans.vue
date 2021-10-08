@@ -5,7 +5,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aspernatur, saepe cum deserunt vero eius.</p>
         </div>
         <div class="col-12">
-            <div class="svg-icon">
+            <div class="svg-icon d-none d-lg-block">
                 <img id="icon-circle-svg" src="../assets/svg/svg-0.svg">
                 <img id="cart" src="../assets/svg/svg-2.svg">
             </div>
@@ -164,8 +164,6 @@ export default {
             color: #999999;
         }
 
-        
-
         th{
             width: calc(100% / 4);
             background-color: $whiteColor;
@@ -219,6 +217,16 @@ export default {
             border: 1px solid #eaebeb;
         }
 
+    }
+}
+
+
+@media screen and (max-width: 576px){
+    .plans-section{
+        overflow: auto;
+        .svg-icon{
+            display: none;
+        }
     }
 }
 </style>
