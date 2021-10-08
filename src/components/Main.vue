@@ -74,7 +74,23 @@
             </div>
 
             <hr>
+        </div>
 
+        <div class="container">
+            <div class="row logos-section">
+                <div class="col-6 col-md-3">
+                    <img class="img-fluid" src="../assets/img/h5-client-5.png" alt="Logo iAcademy">
+                </div>
+                <div class="col-6 col-md-3">
+                    <img class="img-fluid" src="../assets/img/h5-client-1.png" alt="Logo iAcademy">
+                </div>
+                <div class="col-6 col-md-3">
+                    <img class="img-fluid" src="../assets/img/h5-client-2.png" alt="Logo iAcademy">
+                </div>
+                <div class="col-6 col-md-3">
+                    <img class="img-fluid" src="../assets/img/h5-client-3.png" alt="Logo iAcademy">
+                </div>
+            </div>
         </div>
 
         
@@ -236,6 +252,9 @@ main{
     background-size: cover;
 }
 
+.logos-section{
+    margin-bottom: 100px;
+}
 
 //css tasto torna alla navbar
 .turn-up{
