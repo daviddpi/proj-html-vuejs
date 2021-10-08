@@ -2,7 +2,7 @@
     <footer>
         <div class="container">
             <div class="row text-white">
-                <div class="col-12 col-md-3 logo-footer">
+                <div class="col-6 col-md logo-footer">
                     <img class="img-fluid" src="../assets/img/footer-logo-1.png" alt="logo iAcademy">
                     <ul>
                         <li>Providing Life Changing </li>
@@ -19,7 +19,7 @@
                         <span>Mon - Sat 8.00 - 18.00</span>
                     </div>
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-6 col-md">
                     <h2>{{ FooterElement[0].popular.title }}</h2>
                     <ul>
                         <li v-for="(course, index) in FooterElement[0].popular" :key="index">
@@ -28,7 +28,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-2">
+                <div class="col-12 col-md">
                     <h2>Support</h2>
                     <ul>
                         <li>
@@ -67,23 +67,30 @@
                     </ul>
                 </div>
                 <hr>
-                <div class="col-12 sub-footer">
-                    <div class="d-flex justify-content-between">
+
+                <div class="col">
+                    <div class="sub-footer">
+                        Copyright 2017 &copy;Mikado Themes
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="social sub-footer">
+                        <div>Call +44 300 303 0266</div>
+                        <div>Follow Us</div>
                         <div>
-                            Copyright 2017 &copy;Mikado Themes
-                        </div>
-                        <div class="social">
-                            <div>Call +44 300 303 0266</div>
-                            <div>Follow Us</div>
-                            <div>
+                            <a href="https://twitter.com/?lang=it">
                                 <i class="fab fa-twitter"></i>
-                            </div>
-                            <div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/">
                                 <i class="fab fa-instagram"></i>
-                            </div>
-                            <div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://it-it.facebook.com/">
                                 <i class="fab fa-facebook-f"></i>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -103,10 +110,6 @@ export default {
             FooterElement
         }
     },
-
-    created(){
-        console.log(this.FooterElement[0].popular);
-    }
 }
 </script>
 
@@ -120,6 +123,10 @@ footer{
 
     h2, h6{
         font-family: $primaryFont;
+    }
+
+    h2{
+        font-size: 1.7rem;
     }
 
     h6{
@@ -157,19 +164,25 @@ footer{
     .sub-footer{
         color: #949494;
         padding: 20px 0;
+    }
 
-        .social{
-            width: 35%;
-            display: flex;
-            justify-content: space-between;
-            text-transform: uppercase;
+    .social{
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+    }
+
+    .fab{
+        color: #959595;
+        &:hover{
+            color: $whiteColor;
         }
     }
 }
 
 .logo-footer{
     img{
-        height: 38px;
+        max-height: 35px;
     }
 
     ul li{
