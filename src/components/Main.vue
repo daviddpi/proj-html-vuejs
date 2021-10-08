@@ -62,13 +62,84 @@
         <div class="bg-courses-pricing">
    
             <!-- popular courses section -->
-            <div class="container container-popuar-courses">
+            <div class="container container-popular-courses">
                 <BoxCourses :arrayCourses="ElementBoxCourses"/>
             </div>
+
             <hr>
 
-
-
+            <!-- plans section -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1>Pricing Plans</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aspernatur, saepe cum deserunt vero eius.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <ul>
+                            <li>Save up to 40% by paying weekly</li>
+                            <li>Number of Courses</li>
+                            <li>Time</li>
+                            <li>Web Designing</li>
+                            <li>Human-Centered Design</li>
+                            <li>Basic Marketing</li>
+                            <li>Python for Everybody</li>
+                            <li>Android Developer</li>
+                            <li>Business Engligh</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>Standard $12</li>
+                            <li>2</li>
+                            <li>15 days</li>
+                            <li>Web Designing</li>
+                            <li>Human-Centered Design</li>
+                            <li>Basic Marketing</li>
+                            <li>Python for Everybody</li>
+                            <li>Android Developer</li>
+                            <li>Business Engligh</li>
+                            <li>
+                                <button class="mybtn">Get It Now</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>Professional $12</li>
+                            <li>2</li>
+                            <li>15 days</li>
+                            <li>Web Designing</li>
+                            <li>Human-Centered Design</li>
+                            <li>Basic Marketing</li>
+                            <li>Python for Everybody</li>
+                            <li>Android Developer</li>
+                            <li>Business Engligh</li>
+                            <li>
+                                <button class="mybtn">Get It Now</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>Advanced $12</li>
+                            <li>2</li>
+                            <li>15 days</li>
+                            <li>Web Designing</li>
+                            <li>Human-Centered Design</li>
+                            <li>Basic Marketing</li>
+                            <li>Python for Everybody</li>
+                            <li>Android Developer</li>
+                            <li>Business Engligh</li>
+                            <li>
+                                <button class="mybtn">Get It Now</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
@@ -125,6 +196,7 @@ main{
 
     hr{
         margin-bottom: 100px;
+        border: 1px solid #ebebeb;
     }
 }
 
@@ -215,7 +287,7 @@ main{
     
 }
 
-.container-popuar-courses{
+.container-popular-courses{
     position: relative;
     margin-bottom: 180px;
 
@@ -225,7 +297,7 @@ main{
     height: 100%;
     width: 100%;
     background-image: url("../assets/img/page-background-img.png");
-    background-size: contain;
+    background-size: cover;
 }
 
 //css tasto torna alla navbar
